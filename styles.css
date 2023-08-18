@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* PRIMARY COLORS */
+  --primary: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  /* NEUTRAL COLORS */
+  --dark-blue: hsl(212, 21%, 14%);
+  --grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  /* font-family: 'Fraunces', serif; */
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+}
+
+main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  width: 80%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+section div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+section div:first-child {
+  display: flex;
+  height: 100%;
+  background-image: url("./images/image-product-desktop.jpg"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section div:last-child {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 14px 32px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+main footer {
+  position: sticky;
+  bottom: 0;
+}
+
+h4 {
+  color: grey;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: start;
+  letter-spacing: 5px;
+}
+
+h1 {
+  color: var(--dark-blue);
+  font-size: 2.4em;
+  font-family: "Fraunces", serif;
+}
+p {
+  color: var(--grayish-blue);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+section div:nth-child(2) span:first-child {
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: var(--grayish-blue);
+}
+span:first-of-type {
+  color: red;
+  display: flex;
+  font-family: "Fraunces", serif;
+  font-size: 2.4em;
+  font-weight: bold;
+  color: var(--primary);
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+    width: 100%;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    padding: 10px 0px;
+    background-color: var(--primary);
+}
+/* section {
+   
+  } */
