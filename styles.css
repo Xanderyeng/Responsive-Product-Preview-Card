@@ -9,6 +9,7 @@
 :root {
   /* PRIMARY COLORS */
   --primary: hsl(158, 36%, 37%);
+  --secondary: hsl(158, 35%, 18%);
   --cream: hsl(30, 38%, 92%);
   /* NEUTRAL COLORS */
   --dark-blue: hsl(212, 21%, 14%);
@@ -41,9 +42,9 @@ main {
 section {
   display: flex;
   flex-direction: row;
-  height: 60vh;
-  width: 80%;
-  border-radius: 20px;
+  height: 75vh;
+  width: 50vw;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -67,7 +68,7 @@ section div:last-child {
   gap: 5px;
   flex-direction: column;
   background-color: var(--white);
-  padding: 14px 32px;
+  padding: 18px 36px;
   align-items: flex-start;
   justify-content: space-evenly;
 }
@@ -79,22 +80,27 @@ main footer {
 
 h4 {
   color: grey;
+  font-size: 14px;
   font-family: "Montserrat", serif;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
-  text-align: start;
   letter-spacing: 5px;
 }
 
 h1 {
   color: var(--dark-blue);
   font-size: 2.4em;
+  text-align: left;
+  line-height: 40px;
   font-family: "Fraunces", serif;
 }
 p {
   color: var(--grayish-blue);
+  /* padding: 14px 64px 14px 0px; */
   font-size: 14px;
   font-weight: 500;
+  line-height: 1.6;
+  text-align: start;
   font-family: "Montserrat", sans-serif;
 }
 section div:nth-child(2) span:first-child {
@@ -105,25 +111,98 @@ section div:nth-child(2) span:first-child {
   color: var(--grayish-blue);
 }
 span:first-of-type {
-  color: red;
   display: flex;
-  font-family: "Fraunces", serif;
-  font-size: 2.4em;
-  font-weight: bold;
-  color: var(--primary);
-  justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  font-family: "Fraunces", serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--primary);
 }
 
 button {
-    width: 100%;
-    color: var(--white);
-    border: none;
-    cursor: pointer;
-    padding: 10px 0px;
-    background-color: var(--primary);
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 0px;
+  background-color: var(--primary);
+  transition: all 0.3s ease-in;
 }
-/* section {
-   
-  } */
+
+button:hover {
+  background-color: var(--secondary);
+  transform: translateY(-5px);
+}
+
+button img {
+  width: auto;
+  height: 100%;
+}
+
+footer {
+  padding-bottom: 5px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1440px){
+    
+}
+
+@media screen and (max-width: 375px) {
+  section div:first-child {
+    flex: 0.6;
+  }
+
+  section {
+    flex-direction: column;
+    height: 85vh;
+    width: 90%;
+  }
+
+  section div:last-child {
+    gap: 0;
+    justify-content: space-evenly;
+    padding: 10px 18px;
+  }
+
+  h1 {
+    padding: 0;
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 18px 0px;
+    font-size: 1.1rem;
+  }
+
+  span:first-of-type {
+    font-size: 2em;
+  }
+  section div:nth-child(2) span:first-child {
+    font-size: 1rem;
+  }
+}
