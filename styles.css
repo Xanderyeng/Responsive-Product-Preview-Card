@@ -57,7 +57,7 @@ section div {
 section div:first-child {
   display: flex;
   height: 100%;
-  background-image: url("./images/image-product-desktop.jpg"); /* Replace with your image URL */
+  background-image: url("./images/image-product-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,7 +65,7 @@ section div:first-child {
 
 section div:last-child {
   display: flex;
-  gap: 5px;
+  /* gap: 5px; */
   flex-direction: column;
   background-color: var(--white);
   padding: 18px 36px;
@@ -96,7 +96,6 @@ h1 {
 }
 p {
   color: var(--grayish-blue);
-  /* padding: 14px 64px 14px 0px; */
   font-size: 14px;
   font-weight: 500;
   line-height: 1.6;
@@ -164,8 +163,38 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 1440px){
-    
+@media screen and (min-width: 1440px) {
+  section div:last-child {
+    padding: 24px 48px;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.4;
+  }
+
+  span:first-of-type {
+    font-size: 3.6em;
+  }
+  section div:nth-child(2) span:first-child {
+    font-size: 1.4rem;
+  }
+  button {
+    padding: 18px 0px;
+    font-size: 1.1rem;
+  }
+
+  span:first-of-type {
+    font-size: 2em;
+  }
+  section div:nth-child(2) span:first-child {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
