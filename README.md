@@ -28,7 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://xanderyeng.github.io/Responsive-Product-Preview-Card/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/flexbox-and-box-model-concept-QASjlogEX0)
+- Live Site URL: [Live Site URL](https://xanderyeng.github.io/Responsive-Product-Preview-Card/)
 
 ## My process
 
