@@ -1,0 +1,106 @@
+/* ----------------------------------------- */
+/* Very Large Screens e.g. 1080, 1400 and above */
+/* ----------------------------------------- */
+@media screen and (min-width: 1440px) {
+  section div:last-child {
+    padding: 24px 48px;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.4;
+  }
+
+  span:first-of-type {
+    font-size: 3.6em;
+  }
+  section div:nth-child(2) span:first-child {
+    font-size: 1.4rem;
+  }
+  button {
+    padding: 18px 0px;
+    font-size: 1.1rem;
+  }
+
+  span:first-of-type {
+    font-size: 2em;
+  }
+  section div:nth-child(2) span:first-child {
+    font-size: 1rem;
+  }
+}
+
+/* ----------------------------------------- */
+/* Mobile Devices */
+/* ----------------------------------------- */
+@media screen and (max-width: 480px) {
+  section {
+    flex-direction: column;
+    width: 90vw;
+    height: 80vh;
+  }
+  h1 {
+    line-height: 2.8rem;
+  }
+  section div {
+    flex: 0.5;
+  }
+  section div:last-child {
+    justify-content: space-between;
+  }
+}
+
+/* ----------------------------------------- */
+/* Larger Mobile Devices & Small Tablets */
+/* ----------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for larger mobile devices and small tablets */
+}
+
+/* ----------------------------------------- */
+/* Small Mobile Devices */
+/* ----------------------------------------- */
+
+@media screen and (max-width: 375px) {
+  section div:first-child {
+    flex: 0.6;
+  }
+
+  section {
+    flex-direction: column;
+    height: 85vh;
+    width: 90%;
+  }
+
+  section div:last-child {
+    gap: 0;
+    justify-content: space-evenly;
+    padding: 10px 18px;
+  }
+
+  h1 {
+    padding: 0;
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 18px 0px;
+    font-size: 1.1rem;
+  }
+
+  span:first-of-type {
+    font-size: 2em;
+  }
+  section div:nth-child(2) span:first-child {
+    font-size: 1rem;
+  }
+}
